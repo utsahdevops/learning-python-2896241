@@ -6,9 +6,12 @@
 
 
 def main():
-    x, y = 10, 100
+    x, y = 10000, 100
 
     # conditional flow uses if, elif, else
+    if x < y:
+        result = "X is less than Y"
+        print(result)
 
     # conditional statements let you use "a if C else b"
 

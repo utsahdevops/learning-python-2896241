@@ -5,6 +5,7 @@
 
 
 import calendar
+from itertools import count
 
 # create a plain text calendar
 c = calendar.TextCalendar(calendar.SUNDAY)
@@ -40,6 +41,7 @@ for m in range(1,13):
     # The first Friday has to be within the first two weeks
     weekone = cal[0]
     weektwo = cal[1]
+    print(count(cal))
    
     if weekone[calendar.FRIDAY] != 0:
         meetday = weekone[calendar.FRIDAY]
